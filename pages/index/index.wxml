@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="blue"></view>
+<view class="container">
+  <view class="mingpian">
+    <view class="man">
+      <view class="left">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="right">
+        <view class="edit" bindtap="toCreat"><image src="../../files/imgs/editbl.png"></image></view>
+        <view class="h6">{{userInfo.nickName}}</view>
+        <view class="p">{{Moreinfo.Company}}</view>
+        <view class="p">{{Moreinfo.Post}}</view>
+      </view>
+    </view>
+    <view class="info_3">
+      <view class="justify">
+        <image src="../../files/imgs/phone.png"></image><view class="p">{{Moreinfo.PhoneNumber}}</view>
+      </view> 
+      <view class="justify">
+        <image src="../../files/imgs/bumen.png"></image><view class="p">{{Moreinfo.Department}}</view>
+      </view> 
+      <view class="justify">
+        <image src="../../files/imgs/email.png"></image><view class="p">{{Moreinfo.Email}}</view>
+      </view> 
+      <view class="justify" wx:if="{{Moreinfo.Wechat !=''}}">
+        <image src="../../files/imgs/wechat.png"></image><view class="p">{{Moreinfo.Wechat}}</view>
+      </view> 
+      <view class="justify" wx:if="{{Moreinfo.Area !=''}}">
+        <image src="../../files/imgs/gps.png"></image><view class="p">{{Moreinfo.Area}}</view>
+      </view> 
+      <view class="code" bindtap="toMyCode"><image bindtap="getCode" src="../../files/imgs/code.png"></image></view>
+    </view>
+  </view>
+  <view class="bgbox">
+    <view class="nocard hide" bindtap="toCreat">
+      <button class="creatbtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">免费创建名片</button>
+    </view>
+    <view class="hascard">
+      <button class="btn1" open-type="share">递名片</button>
+      <button class="btn2" bindtap="toMyCode">我的小程序码</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,73 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="about">
+    <image src="http://static.hrflag.com/img/zqlogogr.svg"></image>
+    <view class="p">HRflag是中国领先的人力资源管理智库，致力于通过国际化权威、前沿、专业的人力资源知识助力人力资源管理精英实现卓越管理，并以全方位的市场营销策略提升人力资源服务机构市场传播与品牌影响力。HRflag拥有强大的内容研究、活动组织和数字技术能力，通过大量的高品质、大规模的活动和数字化内容的输出，业已成为人力资源服务行业的旗帜品牌。HRflag的业务包含互联网服务、市场营销服务、大型会议和社群活动，旗下品牌包括人力资源行业最高创新奖项-新旗奖(NewFlag Awards)、人力资源服务机构年度大奖-极帜奖（Flag Awards）、年度行业峰会-极帜大会(Flag Conference)、规模高达2,000人的招聘论坛—Staffing Live。全球最大的10家人力资源服务机构中，7家是HRflag的客户。了解更多HRflag最新动态，敬请访问：https://www.hrflag.com</view>
+    <view class="h6">我们的业务组合</view>
+    <view class="ouryw">
+      <view class="ywlogo">
+        <image src="http://greatworkplace.hrflag.com/img/greatwork_gr.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/falogo.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/ebilogo1.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://ebf.hrflag.com/img/ebf2.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/STgr.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/newflag.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/logocap.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://www.hrflag.com/img/logof.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/toplogo.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/logo-cb.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/ebqs.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/logo/xuan.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/XZ.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/flagawards.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/logo-01.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/thinker.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/szhrsummit.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/golf.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/tour.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/cdhrsummit.svg"></image>
+      </view>
+      <view class="ywlogo">
+        <image src="http://static.hrflag.com/img/newflag/hainan.svg"></image>
+      </view>
+    </view>
+  </view>
+</view>

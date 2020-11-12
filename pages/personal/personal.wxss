@@ -1,0 +1,73 @@
+/* pages/personal/personal.wxss */
+.wrap1 {
+  width: 100%;
+  box-shadow: 0 0 5px 0 #ccc;
+}
+.yonghu {
+  padding: 30rpx;
+  background: #fff;
+}
+.yonghu .toupic {
+  background: #f2f2f2;
+}
+.yonghu .toupic image {
+  width: 130rpx;
+  height: 130rpx;
+}
+.yonghu .h6 {
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 0 0 5rpx 0;
+  margin: 0 30rpx 0 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.yonghu .edit_y {
+  font-size: 28rpx;
+  color: #888;
+}
+.edit_y .p {
+  white-space: nowrap;
+}
+.wrap2 {
+  padding: 0 30rpx;
+  background: #fff;
+  box-shadow: 0 0 5px 0 #ccc;
+  margin-top: 40rpx;
+}
+.wrap2 .user {
+  border-bottom: solid 1px #f2f2f2;
+}
+.wrap2 .user:nth-last-child(1) {
+  border: none;
+}
+.user {
+  padding: 20rpx 0;
+}
+.user .flex_center i-icon {
+  position: relative !important;
+  top: -1px !important;
+}
+.user .p {
+  font-size: 28rpx;
+  color: #333;
+}
+.HRflag {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.HRflag image {
+  width: 120px;
+  height: 60px;
+}
+.editbtn button {
+  width: 100px;
+  padding: 4px 10px;
+  background: #0077cc;
+  color: #fff;
+  min-height: 34px;
+}

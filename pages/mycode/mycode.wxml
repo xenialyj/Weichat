@@ -1,0 +1,14 @@
+<!--pages/mycode/mycode.wxml-->
+<view class="container">
+  <view class="codebox">
+    <view class="mycodeInfo">
+      <image src="../../files/imgs/tou.png"></image>
+      <view class="h6">姓名哈哈哈哈哈</view>
+      <view class="p">公司公司公司名称</view>
+    </view>
+    <view class="mycode">
+      <image src="../../files/imgs/mycode.png"></image>
+      <view class="p">扫描上方小程序码添加我的名片</view>
+    </view>
+  </view>
+</view>

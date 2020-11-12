@@ -1,0 +1,44 @@
+<!--pages/personal/personal.wxml-->
+<view class="wrap1">
+  <view class="yonghu flex_space">
+    <view class="flex_center">
+      <view class="toupic">
+        <image src="../../files/imgs/tou.png"></image>
+      </view> 
+      <view class="h6">{{xName}}</view>
+    </view>
+    <view class="editbtn" bindtap="toCreat" wx:if="{{ xName == suijiName }}">
+      <button>完善信息</button>
+    </view>
+    <view class="edit_y flex_center" bindtap="toCreat" wx:else>
+      <view class="p">编辑</view>
+      <i-icon type="enter" />
+    </view>
+  </view>
+</view>
+<view class="wrap2">
+  <view class="user flex_space" bindtap="toFeedback">
+    <view class="flex_center">
+      <i-icon type="feedback" size="22" color="#888" />
+      <view class="p">用户反馈</view>
+    </view>
+    <i-icon type="enter" size="20" color="#888" />
+  </view>
+  <view class="user flex_space" bindtap="toAbout">
+    <view class="flex_center">
+      <i-icon type="emoji" size="22" color="#888" />
+      <view class="p">关于我们</view>
+    </view>
+    <i-icon type="enter" size="20" color="#888" />
+  </view>
+  <view class="user flex_space" bindtap="toMyCode">
+    <view class="flex_center">
+      <i-icon type="mine" size="22" color="#888" />
+      <view class="p">我的小程序码</view>
+    </view>
+    <i-icon type="enter" size="20" color="#888" />
+  </view>
+</view>
+<view class="HRflag">
+  <image src="http://static.hrflag.com/img/zqlogogr.svg"></image>
+</view>

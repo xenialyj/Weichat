@@ -1,0 +1,13 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="container">
+  <view class="p3">感谢您提出宝贵建议，我们将尽快改进。请详细描述您的问题，解决后我们将第一时间告知您。</view>
+  <view class="put">
+    <form bindsubmit="fktext">
+      <textarea class="fktext" bindinput="fkText" value="{{ fkText }}" placeholder="必填，请输入您的建议" placeholder-style="font-size:14px;"></textarea>
+      <textarea class="fkinfo" bindinput="fkPhone" value="{{ fkPhone }}" placeholder="选填，请输入您的手机号" placeholder-style="font-size:14px;"></textarea>
+      <textarea class="fkinfo" bindinput="fkMail" value="{{ fkMail }}" placeholder="选填，请输入您的邮箱" placeholder-style="font-size:14px;"></textarea>
+      <i-button class="tjbtn" type="ghost" bind:click="handleSuccess">提交</i-button>
+      <i-toast id="toast" />
+    </form>
+  </view>
+</view>

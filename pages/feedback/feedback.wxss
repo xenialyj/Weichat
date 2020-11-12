@@ -1,0 +1,32 @@
+/* pages/feedback/feedback.wxss */
+.p3 {
+  font-size: 28rpx;
+  color: #333;
+  padding: 30rpx 0;
+}
+.put textarea.fktext {
+  width: 100%;
+  min-height: 300px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+}
+.put textarea.fkinfo {
+  width: 100%;
+  min-height: 40px;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: #fff;
+  margin-top: 40rpx;
+}
+.put .tjbtn button {
+  background: #0077cc !important;
+  width: 100%;
+  margin-top: 40rpx;
+  color: #fff !important;
+  line-height: 30px !important;
+  font-size: 16px;
+}

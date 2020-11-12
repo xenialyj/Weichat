@@ -1,0 +1,159 @@
+<!--pages/creat/creat.wxml-->
+<view class="blue"></view>
+<view class="container">
+  <view class="mingpian">
+    <view class="man">
+      <view class="left">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="right">
+        <view class="h6">{{userInfo.nickName}}</view>
+        <view class="p">{{Moreinfo.Company}}</view>
+        <view class="p">{{Moreinfo.Post}}</view>
+      </view>
+    </view>
+    <view class="info_3">
+      <view class="justify">
+        <image src="../../files/imgs/phone.png"></image><view class="p">{{Moreinfo.PhoneNumber}}</view>
+      </view> 
+      <view class="justify">
+        <image src="../../files/imgs/bumen.png"></image><view class="p">{{Moreinfo.Department}}</view>
+      </view> 
+      <view class="justify">
+        <image src="../../files/imgs/email.png"></image><view class="p">{{Moreinfo.Email}}</view>
+      </view> 
+      <view class="justify">
+        <image src="../../files/imgs/wechat.png"></image><view class="p">{{Moreinfo.Wechat}}</view>
+      </view> 
+      <view class="justify">
+        <image src="../../files/imgs/gps.png"></image><view class="p">{{userInfo.province}}</view>
+      </view> 
+      <view class="code" bindtap="toMyCode"><image src="../../files/imgs/code.png"></image></view>
+    </view>
+  </view>
+  <view class="bgbox">
+    <view class="weui-cells weui-cells_after-title creatform">
+      <view class="weui-cell  weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="请输入手机号" />
+          </view>
+          <view class="weui-cell__ft">
+              <button class="Phonebtn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{PhoneText}}</button>
+          </view>
+      </view>
+      <view class="weui-cell  weui-cell_vcode" wx:if="{{ isCreated == true }}">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>验证码</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="请输入验证码" />
+          </view>
+          <view class="weui-cell__ft">
+              <view class="weui-vcode-btn">{{getCode}}</view>
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="请输入姓名" />
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>公司</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="请输入公司名称" />
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>行业</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker bindchange="hyChange" value="{{industry[isAnnual].TradeNo}}" range="{{industry}}" range-key="{{'TradeName'}}">
+                <view class="weui-input">{{industry[isAnnual].TradeName}}</view>
+              </picker>
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>部门</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker bindchange="bmChange" value="{{index}}" range="{{array}}">
+                <view class="weui-input"></view>
+              </picker>
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>职位</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="请输入职位" />
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label"><span style="color:red;">*</span>电子邮箱</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="请输入电子邮箱" />
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label">地区</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="weui-input"></view>
+              </picker>
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label">微信</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder-style="font-size:14px;" placeholder="微信号" />
+          </view>
+      </view>
+      <view class="weui-cell" style="padding:0;"></view>
+      <checkbox-group bindchange="bindAgreeChange">
+          <label class="weui-agree" for="weuiAgree">
+              <view class="weui-agree__text">
+                  <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                  <view class="weui-agree__checkbox-icon">
+                      <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                  </view>
+                  阅读并同意<navigator url="" class="weui-agree__link">用户协议</navigator>与<navigator url="" class="weui-agree__link">隐私条款</navigator>
+              </view>
+          </label>
+      </checkbox-group>
+      <view class="weui-form__opr-area">
+        <button class="weui-btn creatCom" type="default" bindtap="openDialog">保存</button>
+      </view>
+      <view class="weui-demo-dialog {{istrue ? 'weui-demo-dialog_show' : ''}}">
+        <view class="weui-mask" bindtap="closeDialog"></view>
+        <view class="weui-dialog__wrp" bindtap="closeDialog">
+            <view class="weui-dialog" catchtap="stopEvent">
+                <view class="weui-dialog__hd">
+                    <view class="p">电子名片创建成功，试一试将名片递送给好友吧</view>
+                </view>
+                <view class="weui-dialog__ft">
+                    <view class="weui-dialog__btn weui-dialog__btn_default" bindtap="closeDialog">残忍放弃</view>
+                    <view class="weui-dialog__btn" bindtap="closeDialog">递名片</view>
+                </view>
+            </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

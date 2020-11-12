@@ -1,0 +1,126 @@
+/* pages/creat/creat.wxss */
+.blue {
+  width: 100%;
+  height: 144rpx;
+  background: #003580;
+}
+.mingpian {
+  width: 94%;
+  height: 520rpx;
+  box-shadow: 0 0 5rpx 0 #ccc;
+  position: absolute;
+  background: #fff;
+  border-radius: 20rpx;
+  left: 3%;
+  padding: 30rpx;
+  top: -120rpx;
+  box-sizing: border-box;
+}
+.man {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding:0 0 20rpx 0;
+  border-bottom: solid 1px #f2f2f2;
+}
+.man .left {
+  width: 20%;
+}
+.man .right {
+  width: 100%;
+  position: relative;
+}
+.man .left image {
+  width: 130rpx;
+  height: 130rpx;
+  background: #f2f2f2;
+}
+.man .right {
+  margin-left: 20rpx;
+}
+.right .h6 {
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 0 0 5rpx 0;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.right .p {
+  font-size: 28rpx;
+  color: #888;
+  line-height: 1.7;
+}
+.info_3 {
+  position: relative;
+  padding: 20rpx 0 0 0;
+}
+.justify {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.justify image {
+  width: 30rpx;
+  height: 30rpx;
+}
+.justify .p {
+  font-size: 24rpx;
+  color: #888;
+  line-height: 2;
+  margin-left: 10rpx;
+}
+.code {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.code image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.bgbox {
+  background: #f5f5f5;
+  padding: 65% 0 40px 0;
+}
+.creatform {
+  border-radius: 20rpx;
+}
+.bgbox .weui-vcode-btn {
+  color: #0077cc;
+  font-size: 32rpx;
+  border: none;
+}
+.weui-form__opr-area {
+  padding: 40rpx 0;
+  margin: 0;
+}
+.creatCom {
+  background: #003580 !important;
+  color: #fff !important;
+}
+.weui-form__opr-area:last-child {
+  margin: 0;
+  padding: 20px 0;
+} 
+.Phonebtn {
+  background: #fff;
+  font-size: 32rpx;
+  color: #0077cc;
+  padding: 0;
+  width: 92px !important;
+  font-weight: normal;
+  text-align: right;
+  line-height: 3;
+  padding: 0 10px 0 10px;
+  border-radius: 0;
+} 
+.weui-demo-dialog {
+  display: none;
+}
+.weui-demo-dialog_show {
+  display: block;
+}

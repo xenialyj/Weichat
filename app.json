@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/maillist/maillist",
+    "pages/personal/personal",
+    "pages/mycode/mycode",
+    "pages/feedback/feedback",
+    "pages/about/about",
+    "pages/creat/creat"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#003580",
+    "navigationBarTitleText": "名片",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f5f5f5"
+  },
+  "usingComponents": {
+    "i-button": "./dist/button/index",
+    "i-icon": "./dist/icon/index",
+    "i-index": "./dist/index/index",
+    "i-index-item": "./dist/index-item/index",
+    "i-modal": "./dist/modal/index",
+    "i-toast": "./dist/toast/index"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "名片",
+        "iconPath": "./files/imgs/tabar1.png",
+        "selectedIconPath": "./files/imgs/tabar1bl.png"
+      },
+      {
+        "pagePath": "pages/maillist/maillist",
+        "text": "通讯录",
+        "iconPath": "./files/imgs/tabar2.png",
+        "selectedIconPath": "./files/imgs/tabar2bl.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "./files/imgs/tabar3.png",
+        "selectedIconPath": "./files/imgs/tabar3bl.png"
+      }
+    ],
+    "color": "#333",
+    "selectedColor": "#003580",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 1000
+  },
+  "debug": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
