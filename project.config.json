@@ -39,7 +39,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.10.0",
   "appid": "wx74f2e0c5f840c31e",
-  "projectname": "demo_weixin_adp",
+  "projectname": "Weichat",
   "debugOptions": {
     "hidedInDevtools": []
   },
